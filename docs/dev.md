@@ -20,6 +20,7 @@ While dev mode is running, perform the following in the command terminal to run 
 * <kbd>Enter</kbd> - run tests on demand, press <kbd>Enter</kbd>.
 * <kbd>r</kbd> - restart the server, type <kbd>r</kbd> and press <kbd>Enter</kbd>.
 * <kbd>h</kbd> - see the help menu for available actions, type <kbd>h</kbd> and press <kbd>Enter</kbd>.
+* <kbd>p</kbd> - see the port information, type <kbd>p</kbd> and press <kbd>Enter</kbd>.
 * <kbd>q</kbd> - stop the server and quit dev mode, press <kbd>Ctrl</kbd>-<kbd>C</kbd> or type <kbd>q</kbd> and press <kbd>Enter</kbd>.
 
 ###### Features
@@ -165,7 +166,7 @@ Remember, you only need to include the command that matches your configuration.
 
 ###### Prerequisites
 
-You need to install Podman or the Docker runtime (Docker Desktop on macOS or Windows, or Docker on Linux) locally to use this Maven goal. If using Podman, version 4.4.4 or higher is required. If using Docker, the installed Docker Client and Engine versions must be 18.03.0 or higher.
+You need to install Podman or the Docker runtime (Docker Desktop on macOS or Windows, or Docker on Linux) locally to use this Maven goal. When using Podman, you'll need version 4.4.4 or higher, and the Maven plugin requires version [3.9](https://github.com/OpenLiberty/ci.maven/releases/tag/liberty-maven-3.9) or higher. If using Docker, the installed Docker Client and Engine versions must be 18.03.0 or higher.
 
 ###### Containerfile/Dockerfile
 
@@ -206,6 +207,7 @@ While dev mode is running in container mode, perform the following in the comman
 * <kbd>t</kbd> or <kbd>Enter</kbd> - If `changeOnDemandTestAction` is set to `true`, type <kbd>t</kbd> and press <kbd>Enter</kbd> to run tests on demand. Otherwise, press <kbd>Enter</kbd>. 
 * <kbd>r</kbd> - rebuild the container image and restart the container, type <kbd>r</kbd> and press <kbd>Enter</kbd>.
 * <kbd>h</kbd> - see the help menu for available actions, type <kbd>h</kbd> and press <kbd>Enter</kbd>.
+* <kbd>p</kbd> - see the port information, type <kbd>p</kbd> and press <kbd>Enter</kbd>.
 * <kbd>q</kbd> - stop the server and quit dev mode, press <kbd>Ctrl</kbd>-<kbd>C</kbd> or type <kbd>q</kbd> and press <kbd>Enter</kbd>.
 
 ###### Linux Limitations
